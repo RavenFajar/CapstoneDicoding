@@ -1,0 +1,784 @@
+*,
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+header.navbar-container {
+    width: 100%;
+    height: 10%;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    background-color: #1C2D3C;
+}
+
+header.navbar-container .logo img {
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+    background-color: #567494;
+    color: white;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Menetapkan dua kolom dengan lebar yang sama */
+    background-color: #EAF2F9;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center; /* Menambahkan justify-content agar konten berada di tengah secara horizontal */
+    text-align: center;
+    padding:4rem  2rem;
+    margin-top: 35px;
+    gap: 10%;
+}
+.content-description{
+    grid-area: 7rem;
+    margin-left: 20%;
+
+}
+.content-image{
+    grid-area: 3rem;
+    margin-left: 10%;
+}
+main .content .content-description h1.title {
+    margin-block: 1rem;
+    font-size: 4rem;
+    color: #4D4D4D;
+}
+
+main .content .content-description h2.title {
+    margin-block: 1rem;
+    font-size: 3.5rem;
+    color: #53CB8E;
+}
+
+main .content .content-description p {
+    font-size: 2rem;
+    line-height: 1.7rem;
+    color: #4D4D4D;
+    font-weight: bold;
+}
+
+main .content .content-description a {
+    padding: 0.8rem 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-color: #53CB8E;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    inline-size: 15rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    transition: all 0.15s ease-in;
+    line-height: 2rem;
+    margin-left: 33%;
+    text-decoration: none;
+}
+
+main .content .content-description button:hover {
+    border: 2px solid #0d2e1d;
+    background-color: transparent;
+    color: #0d2e1d;
+}
+
+main .content .content-image {
+    flex: 1;
+    display: flex;
+    width: 100px;
+}
+
+main .content .content-image img {
+    width: 600px;
+    margin: auto;
+}
+
+.main_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem;
+    gap: 5rem;
+}
+.grafik{
+    display: grid;
+    padding: 1.5rem;
+}
+
+.education_one{
+    display: grid;
+    background-color: #EAF2F9;
+    padding: 2.5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.education_one h1{
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.education_one p{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    margin-top: 0;
+}
+
+.indicator_info {
+    display: flex;
+    flex-direction: column; /* Membuat konten berada dalam satu kolom */
+    justify-content: center; /* Memposisikan konten secara vertikal */
+    align-items: center; /* Memposisikan konten secara horizontal */
+    padding: 1.5rem;
+    background-color: red;
+}
+
+.indicator_info h1 {
+    font-size: 3rem;
+    width: 25rem;
+    height: 5rem;
+    text-align: center; /* Memposisikan teks ke tengah */
+    justify-content: center ;
+    align-items: center;
+    display: flex;
+    border-top-left-radius: 2.3rem; 
+    border-top-right-radius: 2.3rem; 
+    border-bottom-left-radius: 2.3rem;
+    border-bottom-right-radius: 2.3rem;
+    line-height: 4rem;
+}
+
+.indicator_info h2{
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+.main_education{
+    display: grid;
+    padding: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.main_education h1{
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    line-height: 4.5rem;
+}
+
+.main_education p{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+}
+
+.main_education a{
+    padding: 0.8rem 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-color: #53CB8E;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    inline-size: 15rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 10rem;
+    text-decoration: none;
+}
+
+.main_education button:hover {
+    border: 2px solid;
+    background-color: transparent;
+    color: #0d2e1d;
+}
+
+.last_content {
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #EAF2F9;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 5rem;
+    gap: 10%;   
+}
+
+.last_content h1{
+    font-size: 3.5rem;
+    line-height: 5rem;
+    margin-bottom: 0;
+}
+
+.last_content a {
+    grid-row: 2;
+    padding: 0.8rem 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    background-color: #53CB8E;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    inline-size: 15rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 35rem;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center; /* Pusatkan gambar secara horizontal */
+    background-color: #1C2D3C; /* Atur warna latar belakang */
+}
+
+footer img {
+    max-width: 200px; /* Batasi lebar gambar */
+    max-height: 100px; /* Batasi tinggi gambar */
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        height: 100%;
+    }
+    
+    header.navbar-container {
+        flex-direction: row;
+        height: auto;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+    }
+
+    header.navbar-container .logo img {
+        width: 150px;
+        margin: 0 auto; /* Center the logo horizontally */
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        margin-right: 0;
+    }
+
+    header.navbar-container .nav-list ul {
+        width: 100%; /* Full width to utilize the space */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center; /* Center the navigation items horizontally */
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    header.navbar-container .nav-list li {
+        width: 100%; /* Full width to align with the parent */
+        display: flex;
+        justify-content: center; /* Center the links */
+    }
+
+    main .content .content-description a {
+        margin-left: 20%; /* Adjust this value as needed */
+    }
+
+    main .content .content-image{
+        margin-left: 0;
+    }
+
+    main .main_education a{
+        margin-left: 40%;
+        height: 60%;
+    }
+
+    main .last_content a{
+        margin-left: 40%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        height: 100%;
+    }
+
+    header.navbar-container {
+        flex-direction: column;
+        height: auto;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+        padding: 1rem;
+    }
+
+    header.navbar-container .logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header.navbar-container .logo img {
+        width: 100px;
+        margin: 0 auto; /* Center the logo horizontally */
+    }
+
+    header.navbar-container .nav-list ul {
+        width: 100%; /* Full width to utilize the space */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the navigation items horizontally */
+        gap: 1rem;
+    }
+
+    header.navbar-container .nav-list li {
+        width: 100%; /* Full width to align with the parent */
+        display: flex;
+        justify-content: center; /* Center the links */
+    }
+
+    main .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+        margin-top: 20px;
+    }
+
+    main .content .content-description {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    main .content .content-description a {
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-left: 20rem;
+        height: 3rem;
+    }
+
+    main .content .content-image {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    main .content .content-image img {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    main .content .content-description h1.title{
+        font-size: 3rem;
+    }
+
+    main .content .content-description h2.title{
+        font-size: 3rem;
+    }
+
+    main .content .content-description p{
+        font-size: 2rem;
+    }
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .grafik {
+        padding: 1rem;
+    }
+
+    .education_one {
+        padding: 1.5rem;
+        margin-left: 0rem;
+    }
+
+    .education_one h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .education_one p {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .indicator_info {
+        padding: 1rem;
+    }
+
+    .indicator_info h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .indicator_info h2 {
+        font-size: 1.5rem;
+    }
+
+    .main_education {
+        padding: 1.5rem;
+    }
+
+    .main_education h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .main_education p {
+        font-size: 1.5rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
+    }
+
+    .main_education a {
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-left: 10%;
+    }
+
+    .last_content {
+        padding: 2rem 1rem;
+    }
+
+    .last_content h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-top: 0;
+    }
+
+    .last_content a {
+        margin-left: 0;
+        height: 2rem;
+    }
+
+    footer {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    footer img {
+        max-width: 150px;
+        max-height: 75px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        height: 100%;
+    }
+
+    header.navbar-container {
+        flex-direction: column;
+        height: auto;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+        padding: 1rem;
+    }
+
+    header.navbar-container .logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    header.navbar-container .logo img {
+        width: 90px;
+        margin: 0 auto; /* Center the logo horizontally */
+    }
+
+    header.navbar-container .nav-list ul {
+        width: 100%; /* Full width to utilize the space */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the navigation items horizontally */
+        gap: 0.5rem;
+    }
+
+    header.navbar-container .nav-list li {
+        width: 100%; /* Full width to align with the parent */
+        display: flex;
+        justify-content: center; /* Center the links */
+    }
+
+    main .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin-top: 10px;
+    }
+
+    main .content .content-description {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    main .content .content-description a {
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+    main .content .content-description h1.title{
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
+        line-height: 1rem;
+    }
+
+    main .content .content-description h2.title{
+        font-size: 2rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
+    }
+
+    main .content .content-description p{
+        font-size: 1.5rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
+    }
+
+    main .content .content-image {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    main .content .content-image img {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .grafik {
+        padding: 0.5rem;
+    }
+
+    .education_one {
+        padding: 1rem;
+    }
+
+    .education_one h1 {
+        font-size: 2rem;
+    }
+
+    .education_one p {
+        font-size: 1.2rem;
+    }
+
+    .indicator_info {
+        padding: 0.5rem;
+    }
+
+    .indicator_info h1 {
+        font-size: 2rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .indicator_info h2 {
+        font-size: 1.2rem;
+    }
+
+    .main_education {
+        padding: 1rem;
+    }
+
+    .main_education h1 {
+        font-size: 2.5rem;
+    }
+
+    .main_education p {
+        font-size: 1.2rem;
+    }
+
+    .main_education a {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .last_content {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .last_content h1 {
+        font-size: 2.5rem;
+    }
+
+    .last_content a {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+        padding: 0.5rem;
+    }
+
+    footer img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        height: 100%;
+        font-size: 14px
+    }
+
+    header.navbar-container {
+        flex-direction: column;
+        height: auto;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .nav-list ul {
+        padding: 0;
+        text-align: center;
+    }
+    .nav-list li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    header.navbar-container .logo {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    header.navbar-container .logo img {
+        width: 70px;
+        margin: 0 auto; /* Center the logo horizontally */
+    }
+    
+    header.navbar-container .nav-list ul {
+        width: 100%; /* Full width to utilize the space */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the navigation items horizontally */
+        gap: 0.5rem;
+    }
+    
+    header.navbar-container .nav-list li {
+        width: 100%; /* Full width to align with the parent */
+        display: flex;
+        justify-content: center; /* Center the links */
+    }
+    
+    .content, .main_content, .last_content {
+        padding: 10px;
+    }
+    .content-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-description, .content-image, .education_one, .main_education, .indicator_info {
+        text-align: center;
+    }
+    .content-image img, .footer img {
+        width: 100%;
+        height: auto;
+    }
+    .grafik {
+        display: none; /* Assuming you might want to hide complex graphics on smaller screens */
+    }
+    .main_education{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .last_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    footer {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    footer img {
+        max-width: 80px;
+        max-height: 40px;
+    }
+}
+
+
+
+

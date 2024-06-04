@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Katasfora</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="../styles/home.css" rel="stylesheet">
+    <!-- Styles -->
+    <style>
+    </style>
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <img src="../images/logo fix.png" alt="Katasfora" />
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#/education">Education</a></li>
+                <li><a href="#/forum">Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="dynamicContent"></div>
+    </main>   
+    <footer>
+        <img src="../images/logo fix.png" alt="Katasfora" />
+    </footer>
+    <script src="../view/forum.js"></script>
+    <script src="../route/routes.js"></script>
+</body>
+</html>   
