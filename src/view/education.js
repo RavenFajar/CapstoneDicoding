@@ -1,16 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const dynamicContent = document.getElementById('dynamicContent');
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '../styles/education.css';    
+    link.href = '../styles/education.css';
+    document.head.appendChild(link);
 
     const mainContentHTML = `
-        <div class="information">
             <div class="info_one">
                 <h1>Kenapa di Kota Jakarta Sering Terjadi Banjir?</h1>
                 <p>Banjir sering terjadi di Jakarta karena beberapa faktor utama. Topografi rendah menyebabkan banyak wilayah berada di bawah permukaan laut, membuatnya rentan terhadap genangan. Sistem drainase yang buruk sering tersumbat sampah, menghambat aliran air. Selain itu, urbanisasi cepat yang kurang terencana mengurangi daerah resapan air, sehingga air hujan tidak dapat terserap dengan baik ke dalam tanah. Kombinasi faktor-faktor ini menyebabkan banjir menjadi masalah berulang di Jakarta.</p>
             </div>
-            <div class="info_two">
+            <div class ="information">
+                <div class="info_two">
                 <h1>Dampak Negatif yang Timbul Akibat Banjir</h1>
                 <img src="../images/banjir jakarta.jpg" alt="Banjir" />
                 <h2>Dampak Terhadap Manusia</h2>
@@ -21,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>Kerugian akibat kerusakan properti, infrastruktur, lahan pertanian, dan gangguan bisnis menyebabkan beban finansial yang berat bagi individu, bisnis, dan pemerintah.</p>
                 <h2>Apa yang Harus Dilakukan Jika Terjadi Banjir?</h2>
                 <p>Saat banjir, segera cari tempat tinggi yang aman, matikan listrik, dan amankan dokumen penting. Dengarkan informasi dari pihak berwenang. Jangan berjalan atau mengemudi melalui air banjir. Jika ada perintah evakuasi, ikuti instruksi dengan tenang.</p>
+                </div>
+                <div id="news_container"></div>
             </div>
-        </div>
-        <div id="news_container"></div>
     `;
 
     dynamicContent.innerHTML = mainContentHTML;
